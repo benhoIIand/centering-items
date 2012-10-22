@@ -15,16 +15,16 @@
 				var obj = $(this);
 				var margin = parseInt(obj.find('li').css('margin-right'));
 
-				$(window).resize(centerListItems);
 				centerListItems();
+				$(window).resize(centerListItems);
 
 				function centerListItems() {
 
-					var total = 0;
-					var temp_total = 0;
-					var j = 0;
-					var contW  = obj.width();
-					var items  = obj.find('li').length;
+					var total = 0,
+						temp_total = 0,
+						j = 0,
+						contW  = obj.width(),
+						items  = obj.find('li').length;
 
 					obj.find('li').css({'margin-left':'0px','margin-right':margin});
 
